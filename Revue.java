@@ -1,0 +1,14 @@
+public class Revue extends Document {
+    private int numero;
+
+    public Revue(String titre, int annee, int numero) {
+        super(titre, annee);
+        this.numero = numero;
+    }
+
+    @Override
+    public String descriptionCourte() {
+        return "[Revue] " + titre + " (" + annee
+                + "), numero " + numero;
+    }
+}
